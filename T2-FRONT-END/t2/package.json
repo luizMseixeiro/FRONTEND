@@ -1,0 +1,14 @@
+{
+  "name": "t2",
+  "version": "1.0.0",
+  "description": "t2",
+  "main": "consulta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luiz Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

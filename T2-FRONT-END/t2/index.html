@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta Climática</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/consulta.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Consulta Climática:</h2><br>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o Nome da Cidade" id="cidade">
+                <button id="pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="weather" class="hide">
+            <h2><i class="fa solid fa-location-dot"></i>
+            <span id="city"></span>
+            <img src="" id="pais">
+        </h2>
+        <p id="temperatura"><span></span>&deg;C</p><br>
+        <p id="sensacao"><span></span>&deg;C</p><br>
+        <div class="description-container">
+            <p id="description"></p>
+            <img src="" alt="Condições Tempo" id="weather-icon">
+        </div>
+        <div class="latitude"><strong>
+            <p id="latitude"></p><br>
+            <p id="longetude">Longetude:</p></strong>
+        </div>
+        <div class="details-container">
+            <p id="umidade">
+            <i class="fa-solid fa-droplet"></i>
+                <span></span>
+            </p>
+            <p id="vento">
+                <i class="fa-solid fa-wind"></i>
+                <span></span>
+            </p>
+        </div>
+        </div>
+        <div class="hide" id="erro">
+            <br>
+            <p id="errotext">Não foi encontrado nenhuma cidade. Por favor, verifique a ortografia.</p>
+        </div>
+        <div id="loader" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+    </div>
+    
+    
+</body>
+</html>
