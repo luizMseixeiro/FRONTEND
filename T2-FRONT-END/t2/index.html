@@ -13,14 +13,37 @@
 <body>
     <div class="container">
         <div class="form">
-            <h2>Consulta Climática:</h2><br>
-            <div class="form-input-container">
+            <h2>Consulta Climática!<br>
+                Escolha qual método você quer pesquisar:
+            </h2><br>
+
+            <div class="container" id="formapesquisa">
+                <button class="glow-on-hover" id="cidadebutton" onclick="displaycidade()">
+                    <b>Pesquisar por Cidade</b>
+                </button>
+                <button class="glow-on-hover" id="latbutton" onclick="displaylatitude()">
+                    <b>Latitude/Longitude</b>
+                </button>
+            </div>
+
+            <div class="hide" id="divcidade2">
+            <div class="form-input-container" id="divcidade">
                 <input type="text" placeholder="Digite o Nome da Cidade" id="cidade">
                 <button id="pesquisa">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
+        <div class="hide" id="latin2">
+            <div class="form-input-container" id="latin">
+                <input type="text" placeholder="Digite a Latitude" id="latinput">
+                <input type="text" placeholder="Digite a Longitude" id="longinput">
+                <button id="pesquisalat">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
         <div id="weather" class="hide">
             <h2><i class="fa solid fa-location-dot"></i>
             <span id="city"></span>
@@ -34,7 +57,7 @@
         </div>
         <div class="latitude"><strong>
             <p id="latitude"></p><br>
-            <p id="longetude">Longetude:</p></strong>
+            <p id="longetude">Longitude:</p></strong>
         </div>
         <div class="details-container">
             <p id="umidade">
